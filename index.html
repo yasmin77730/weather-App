@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+<header class="bg-body">
+  <nav class="navbar navbar-expand-lg navbg ">
+    <div class="container ">
+      <a class="navbar-brand  d-flex  p-3 my-3" href="#">
+       <div>
+        <img src="images/logo.png" alt="">
+       </div>
+        <div class="ms-2">
+          <h1 class="fs-6 pb-0 mb-0 text-white">Weather</h1>
+          <small class="fs-6 text-white">tagline goes here</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-between  w-75 ul-text">
+          <div class="link-circle  d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+          </div>
+          <li class="nav-item text-white frame">
+            <a class="nav-link text-white px-3" href="#">News</a>
+          </li>
+          <li class="nav-item frame">
+            <a class="nav-link text-white" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item frame" >
+            <a class="nav-link text-white" href="#">Photos</a>
+          </li>
+          <li class="nav-item frame">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+          
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="hero w-100 overflow-auto">
+  <div class="container  mt-5 ">
+    <div class="  input-group mb-3 py-4  ">
+      <input id="inputSearch" type="text" class="form-control rounded-pill pt-2 pb-2 inbg" placeholder="Find your location" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button id="searchBtn" class="btn btn-info rounded-pill " type="button" id="button-addon2">Find</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row gx-2" id="demo">
+      
+    </div>
+  </div>
+  
+</div>
+
+<div class="footer py-4">
+  <div class="container d-flex">
+    <div class="box w-75">
+      <div class="  input-group mb-3 py-4  ">
+        <input id="inputEmail" type="text" class="form-control rounded-pill pt-2 pb-3 inbg" placeholder="Enter your email to subscribe" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button id="subscribeBtn" class="btn  rounded-pill " type="button" id="button-addon2">Subscribe</button>
+      </div>
+      <p class="text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+    <div class="box2 text-center  w-25 d-flex justify-content-center align-items-center">
+      <div class="icon-group d-flex ">
+        <div class="circle  "><a href=""><i class="fa-brands fa-facebook-f fs-4"></i></a></div>
+        <div class="circle  ms-2"><a href=""><i class="fa-brands fa-twitter fs-4"></i></a></div>
+       <div class="circle  ms-2"> <a href=""><i class="fa-brands fa-google fs-4"></i></a></div>
+      <div class="circle  ms-2">  <a href=""><i class="fa-brands fa-pinterest fs-4"></i></a></div>
+      </div>
+    </div>
+    </div>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
