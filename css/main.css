@@ -26,15 +26,20 @@
 } */
 input::placeholder{
     color: white;
+    /* background-color:#1e202b ; */
+
 }
 .num{
     font-size: 90px;
 }
-.forcast-today {
+.forcast-today  {
     background-color:#1e202b ;
+    border:3px solid #323543;
 }
-.forecast-content{
-    background-color: #323544;
+
+.forcast-header{
+    background-color: #323543;
+    width: 100%;
 }
 .footer{
     background-color:#1e202b ;

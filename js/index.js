@@ -30,7 +30,7 @@ searchBtn.addEventListener("click", function () {
 
   async function getData(query){
  try{
- let myData= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=33c4dc9755b6496588e123831242909&q=${query}&days=3`);
+ let myData= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=33c4dc9755b6496588e123831242909&q=${query}&days=3`);
  let response= await myData.json();
   console.log(response);
   allData=response;
@@ -69,31 +69,30 @@ for(let i=0;i<myArray.length;i++){
   console.log(date);
 
  
-  cartouna+=`<div class="col-lg-4  forcast-today text-white rounded">
-        <div class="forcast-header d-flex justify-content-between ">
+  cartouna+=`<div class="col-lg-4  forcast-today text-white rounded ">
+        <div class="forcast-header py-2 d-flex justify-content-between w-100">
         <div class="day">${date.day}</div>
         <div class="date">${date.numDay}${date.month}</div>
         </div>
         <div class="forecast-content mb-2 ">
-          <div class="location my-3 fs-3">${location}</div>
+          <div class="location my-3 fs-3 ps-2">${i<1 ? location:''}</div>
           <div class="degree ">
-            <div class="num ">${temp}</div>
+            <div class="num ps-2">${temp}C</div>
             <div class=" mx-3 degree-icon">
               <img src=${icon} alt="">
             </div>
           </div>
-          <div class="custom my-3">${status}</div>
+          <div class="custom my-3 ps-2">${status}</div>
           <span>
             <img src="images/icon-compass.png" alt="">${humidity}%
           </span>
-          <span><img src="images/icon-umberella.png" class="ms-2" alt="">18km/h</span>
+          <span class=""><img src="images/icon-umberella.png" class="ms-2" alt="">18km/h</span>
           <span><img src="images/icon-wind.png" class="ms-2" alt="">East</span>
         </div>
       </div>`
 }
 document.getElementById('demo').innerHTML=cartouna;
  }
-
 
 
 // get Day
