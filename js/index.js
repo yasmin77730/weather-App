@@ -69,25 +69,27 @@ for(let i=0;i<myArray.length;i++){
   console.log(date);
 
  
-  cartouna+=`<div class="col-lg-4  forcast-today text-white rounded ">
+  cartouna+=`<div class="col-lg-4  ${i==1 ? `forecast-tomorrow` :`forcast-today`} text-white rounded ">
         <div class="forcast-header py-2 d-flex justify-content-between w-100">
         <div class="day">${date.day}</div>
         <div class="date">${date.numDay}${date.month}</div>
         </div>
-        <div class="forecast-content mb-2 ">
+        <div class="forecast-content ${i>0? `text-center`:``} mb-2 ">
           <div class="location my-3 fs-3 ps-2">${i<1 ? location:''}</div>
           <div class="degree ">
-            <div class="num ps-2">${temp}C</div>
+            <div class="num ps-2 ${i>0 ? `fs-4 pt-4`:`fs-1`}">${temp}<sup>o</sup>C</div>
             <div class=" mx-3 degree-icon">
               <img src=${icon} alt="">
             </div>
           </div>
           <div class="custom my-3 ps-2">${status}</div>
+          <div class="spans ${i==0?`d-block`:`d-none`}">
           <span>
             <img src="images/icon-compass.png" alt="">${humidity}%
           </span>
           <span class=""><img src="images/icon-umberella.png" class="ms-2" alt="">18km/h</span>
           <span><img src="images/icon-wind.png" class="ms-2" alt="">East</span>
+          </div>
         </div>
       </div>`
 }

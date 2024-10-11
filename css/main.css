@@ -37,10 +37,25 @@ input::placeholder{
     border:3px solid #323543;
 }
 
+
+.forecast-tomorrow{
+    background-color:#323543;
+    border:3px solid #323543;
+}
 .forcast-header{
     background-color: #323543;
     width: 100%;
 }
+.form-control{    
+    background-color:#1e202b ;
+}
+
+.form-control::placeholder{
+   color: white;
+}
+
+
+
 .footer{
     background-color:#1e202b ;
 }
